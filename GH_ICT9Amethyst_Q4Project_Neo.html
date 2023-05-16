@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversion Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+h1 {
+    color: #F5CB5C;
+}
+h4 {
+    color: #F5CB5C;
+}
+label {
+    color: #F5CB5C;
+}
+body {
+    background-color:##E8EDDF;
+}
+* {
+    text-align: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center th {
+    padding: 80px;
+    border-style: solid;
+        border-width: 9px;
+        border-color: ##242423;
+        text-align: center;
+        margin: auto;
+    }
+}
+    </style>
+<body>
+    <br><br><br>
+    <table class="center"> 
+    <tr>
+        <th style="background-color:#333533">
+            <br>
+    <div class="container">
+    <h1 class="text-center">Unit Converter</h1>
+    <h4><center>From Millimeters to Centimeters, Meters, and Kilometers</center></h4>
+    <br>
+<div class="row">
+    </div>    
+    <div class="row align-items-center row2">
+        <div class="col-md-12">
+            <label>
+                Type Desired Value 
+            </label>
+            <input type="number" class="form-control" id="millimeter" placeholder="Millimeter">
+            </div>                 
+        </div>
+    </div>
+
+    <div class="row align-items-center row3">
+        <br><br><br><br><br><br>
+        <div class="col-md-4">
+            <button class="btn btn-light" onClick="centimeter()">Convert to Centimeters</button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-light" onClick="meter()">Convert to Meters</button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-light" onClick="kilometer()">Convert to Kilometers</button>
+        </div>
+   </div>
+</div>
+</body>
+<script>
+    function centimeter(){
+        var x, y
+        x = (document.getElementById('millimeter').value);
+        y = 10;     
+        window.alert(x / y);
+    }
+    function meter(){
+        var x, y
+        x = (document.getElementById('millimeter').value);
+        y = 1000;       
+        window.alert(x / y);
+    }
+
+    function kilometer(){
+        var x, y 
+        x = (document.getElementById('millimeter').value);
+        y = 1e+6;      
+        window.alert(x / y);
+
+    }
+    </script>
+</html>
